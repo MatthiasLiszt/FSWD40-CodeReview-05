@@ -1,0 +1,36 @@
+var Persons = [
+                       {
+			name: 'John',
+			surname: 'Doe',
+			favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+			age: 25,
+   			myPhoto: "img/boy1.jpg",	
+			likes: 0    // numeric property used to store likes
+			},
+			{
+			name: 'Ann',
+			surname: 'Dough',
+			favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+			age: 26,
+   			myPhoto: "img/girl1.jpg",	
+			likes: 4    // numeric property used to store likes
+			},
+			{
+			name: 'Mary',
+			surname: 'Jane',
+			favoritePerformers: ["Justin Timberlake", "Ed Sheeran", "Emma Watson"],
+			age: 24,
+   			myPhoto: "img/girl2.jpg",	
+			likes: 3    // numeric property used to store likes
+			},
+			{
+			name: 'Sam',
+			surname: 'May',
+			favoritePerformers: ["Justin Timberlake", "Emma Watson"],
+			age: 23,
+   			myPhoto: "img/boy2.jpg",	
+			likes: 2    // numeric property used to store likes
+			} 
+			
+];
+

@@ -1,0 +1,3 @@
+var welcome={
+    innerHTML: "<div id='welcome'><div><span>Welcome to our website</span></div></div>"   
+};

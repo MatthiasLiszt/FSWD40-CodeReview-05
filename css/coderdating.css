@@ -1,0 +1,76 @@
+body{
+ font-family: "sans-serif";
+}
+
+header{
+ background-color: darkviolet;
+ text-align: center;
+ font-size: 5vh;
+ padding: 2vh;
+ color: white;
+}
+
+header span{
+ color: red;
+}
+
+footer{
+  background-color: white;
+  color: dimgrey;
+  text-align: center;
+}
+
+footer span{
+ color: red;
+}
+
+#welcome{
+ background-image: url("../img/computer.jpg");
+ background-size: 100vw 33vh;
+ 
+ font-size: 14vh;
+ height: 33vh;
+}
+
+#welcome div{
+ background-color: rgba(148,0,211,0.3); 
+ color: white;
+ text-align: center;
+} 
+
+#welcome span{
+ color: white;
+} 
+
+.person{
+ background-color: plum;
+ width: 30vw;
+ display: flex;
+ justify-content: space-between;
+ flex-direction: row;
+ padding: 5%;
+ margin: 3%;
+ float: left;
+}
+
+.person img{
+ width: 25%; 
+}
+
+#personwrapper{
+ width: 100vw;
+ overflow: scroll;
+}
+
+.person span{
+ color: red;
+}
+
+.like{
+ background-color: paleturquoise;
+ color: black;
+ font-weight: bold;
+ border: solid grey thin;
+ border-radius: 20%;
+}
+
