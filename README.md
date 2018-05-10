@@ -1,2 +1,8 @@
 # FSWD40-CodeReview-05
-codefactory code review for week 5 
+
+## Task 
+
+In this  Code Review,  your job is to create a list of users for a dating website specialized 
+for web-savvy people! Information about the users are stored in an array of JavaScript objects.
+
+
