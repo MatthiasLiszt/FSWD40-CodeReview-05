@@ -52,6 +52,7 @@ footer span{
  padding: 5%;
  margin: 3%;
  float: left;
+ font-size: 2.5vh;
 }
 
 .person img{
@@ -92,6 +93,10 @@ footer span{
   font-size: 7vh;
  }
  .person{
-   font-size: 1.3vh;
+   font-size: 1.6vh;
+  }
+ .like{
+   font-size: 1.6vh;
+   font-weight: bold;
   }
 }
