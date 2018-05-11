@@ -74,3 +74,14 @@ footer span{
  border-radius: 20%;
 }
 
+#sortButton{
+ position: fixed;
+ text-decoration: none;
+ top: 3vh;
+ left: 3vh;
+ font-size: 5vh;
+ color: yellow;
+ border: none;
+ background-color: red;
+ border-radius: 12%;
+}

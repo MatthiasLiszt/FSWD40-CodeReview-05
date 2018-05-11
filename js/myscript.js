@@ -26,6 +26,7 @@ function loadContent(){
 }
 
 loadContent();
+addSortButton();
 
 function incrementLikes(id){
  console.log("likes of id "+id+" with name "+Persons[id].name+" "+Persons[id].surname);
@@ -33,3 +34,31 @@ function incrementLikes(id){
  console.log("likes change to "+Persons[id].likes);
  loadContent();
 };
+
+function sortIt(){
+ var Sorted=JSON.parse(JSON.stringify(Persons));
+ var maxlikes=0;
+ var j=0; 
+
+ for(var i=0;i<Sorted.length;++i)
+  {
+   Persons.map(function(x){
+             if(x.likes>maxlikes)
+              {var swap=Sorted[j];
+               Sorted[j]=x;maxlikes=x.likes;
+               Sorted[i]=swap;
+              }  
+             
+   });
+   ++j;
+  }
+ Persons=Sorted;
+ loadContent();
+}
+
+function addSortButton(){
+ var newElement=document.getElementById('sortIt');
+ newElement.innerHTML="<button id='sortButton' onclick='sortIt()'>sort by likes</button>";
+ console.log('sort button added');
+}
+
