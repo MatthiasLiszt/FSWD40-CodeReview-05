@@ -86,3 +86,12 @@ footer span{
  background-color: red;
  border-radius: 12%;
 }
+
+@media screen and (max-width: 500px){
+ #welcome{
+  font-size: 7vh;
+ }
+ .person{
+   font-size: 1.3vh;
+  }
+}
