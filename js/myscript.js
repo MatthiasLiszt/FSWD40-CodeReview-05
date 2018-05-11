@@ -21,7 +21,7 @@ function loadContent(){
  var wrap=wrap1+people.join('')+"</div>";
  document.getElementById('dropContent').innerHTML=welcome.innerHTML+wrap;
  console.log('content loaded');
- console.log(people.join(''));            
+ //console.log(people.join(''));            
  //console.log(welcome.innerHTML);
 }
 
@@ -37,20 +37,20 @@ function incrementLikes(id){
 
 function sortIt(){
  var Sorted=JSON.parse(JSON.stringify(Persons));
- var maxlikes=0;
- var j=0; 
-
- for(var i=0;i<Sorted.length;++i)
-  {
-   Persons.map(function(x){
-             if(x.likes>maxlikes)
-              {var swap=Sorted[j];
-               Sorted[j]=x;maxlikes=x.likes;
-               Sorted[i]=swap;
-              }  
-             
-   });
-   ++j;
+ 
+ for(var i=0;i<(Sorted.length-1);++i)
+  {for(var j=i+1;j<Sorted.length;++j)
+    {x=Sorted[i];
+     y=Sorted[j]; 
+     if(y.likes>x.likes){
+       var swap=JSON.stringify(x);
+       var old=JSON.stringify(y);
+       Sorted[j]=JSON.parse(swap);
+       Sorted[i]=JSON.parse(old);
+       console.log("swapped "+x.name+" with "+y.name);
+       console.log(Sorted[i].name+" "+Sorted[i].surname);
+      } 
+    }    
   }
  Persons=Sorted;
  loadContent();

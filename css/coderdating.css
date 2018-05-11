@@ -45,6 +45,7 @@ footer span{
 .person{
  background-color: plum;
  width: 30vw;
+ height: 20vh;
  display: flex;
  justify-content: space-between;
  flex-direction: row;
